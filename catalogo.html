@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>Catálogo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+  <h2>Catálogo de alimentos</h2>
+  <table class="table table-bordered">
+    <thead><tr><th>Alimento</th><th>Cantidad</th></tr></thead>
+    <tbody>
+      {% for item in items %}
+        <tr><td>{{ item[1] }}</td><td>{{ item[2] }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a class="btn btn-secondary" href="/">Volver al inicio</a>
+</body>
+</html>
